@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мини-диагностика — Высший балл</title>
+  <meta name="description" content="8 коротких заданий по математике, русскому языку или информатике и промокод BALL10.">
+  <meta property="og:title" content="Мини-диагностика — Высший балл">
+  <meta property="og:description" content="8 коротких заданий по математике, русскому языку или информатике и промокод BALL10.">
+  <meta property="og:image" content="https://tz-23-vysshiy-ball.vercel.app/img/og.jpg">
+  <meta property="og:url" content="https://tz-23-vysshiy-ball.vercel.app/diagnostic.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">К содержанию</a>
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="logo" href="index.html">
+        <img src="img/logo.jpg" width="44" height="44" alt="Логотип центра «Высший балл»">
+        <span>Высший балл<small>центр подготовки к ЕГЭ и ОГЭ</small></span>
+      </a>
+      <a class="header-phone" href="tel:+79003232323" data-event="contact_click" data-contact-type="phone">+7 (900) 323-23-23</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Главная</a><a href="subjects.html">Предметы</a><a href="teachers.html">Преподаватели</a><a href="results.html">Результаты</a><a href="prices.html">Цены</a><a href="score.html">Баллы</a><a href="diagnostic.html" aria-current="page">Диагностика</a><a href="contacts.html">Запись</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content">
+    
+    <section class="section wrap">
+      <h1>Мини-диагностика</h1>
+      <div id="diag-start">
+        <p class="lead">Выбери предмет. Впереди 8 заданий с кратким ответом: число или слово. Пробелы в ответе не учитываются. Задания составлены для этой страницы по формату открытого банка ФИПИ.</p>
+        <label for="diag-subject">Предмет</label>
+        <select id="diag-subject">
+          <option value="">Выберите предмет</option>
+          <option value="math">Математика</option>
+          <option value="russian">Русский язык</option>
+          <option value="informatics">Информатика</option>
+        </select>
+        <p class="field-error" id="diag-error"></p>
+        <div class="actions"><button class="btn btn-primary" id="diag-start-btn" type="button">Начать</button></div>
+      </div>
+      <div id="diag-run" class="hidden">
+        <p class="progress" id="diag-progress"></p>
+        <h2 id="diag-text"></h2>
+        <label for="diag-answer">Ответ</label>
+        <input id="diag-answer" type="text" autocomplete="off">
+        <div class="actions"><button class="btn btn-primary" id="diag-next" type="button">Дальше</button></div>
+      </div>
+      <div id="diag-done" class="hidden">
+        <h2>Результат: <span id="diag-total"></span></h2>
+        <div id="diag-review"></div>
+        <div class="note">
+          <h2>Промокод</h2>
+          <div class="promo"><code>BALL10</code><button class="btn btn-blue" id="promo-copy" type="button">Скопировать</button></div>
+          <p id="promo-note">Назовите этот код при записи на пробник. Скидка 10 % на второй предмет указана на странице цен отдельно.</p>
+        </div>
+        <a class="btn btn-primary" href="contacts.html" data-event="cta_click" data-button-name="diagnostic_trial" data-page-section="diagnostic">Записаться на пробный ЕГЭ</a>
+      </div>
+    </section>
+     
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>АНО ДО «Высший балл»</h2>
+        <p>614131, г. Новоозёрск, ул. Учительская, д. 23</p>
+        <p><a href="mailto:info@vysshiy-ball.example" data-event="contact_click" data-contact-type="email">info@vysshiy-ball.example</a></p>
+        <p><a href="privacy.html">Политика конфиденциальности</a></p>
+      </div>
+      <div>
+        <h2>Соцсети</h2>
+        <div class="socials">
+          <a href="https://instagram.com/vysshiy_ball_ege" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+          <a href="https://vk.com/vysshiy_ball" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+          <a href="https://t.me/vysshiy_ball_ege" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+          <a href="https://www.youtube.com/@vysshiy_ball" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap"><p class="fine">Готовим к ОГЭ и ЕГЭ с 2017 года. Конкретный балл на экзамене не обещаем.</p></div>
+  </footer>
+  <script src="js/config.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/form.js"></script>
+<script src="js/diagnostic.js"></script>
+</body>
+</html>

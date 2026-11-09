@@ -3,7 +3,7 @@
  * Публикация: Развернуть → Веб-приложение, выполнять от имени владельца,
  * доступ «Все». В js/config.js вставляется адрес, который заканчивается на /exec.
  */
-var SPREADSHEET_ID = "PASTE_SPREADSHEET_ID";
+var SPREADSHEET_ID = "1tlOdfSNFo36c2zEj1Qg70MWZ8MDQBaklNhQpNucmM_Q";
 var SHEET_NAME = "leads";
 
 var SUBJECTS = ["math_profile", "math_base", "russian", "informatics", "social", "physics", "english"];
